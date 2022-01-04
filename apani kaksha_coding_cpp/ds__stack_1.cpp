@@ -6,54 +6,54 @@ pop()
 top();
 empty();
 */
-#include<iostream>
+#include <iostream>
 using namespace std;
 #define n 100
 //stack using array
-class stack{
-    
+class stack
+{
+
     int *arr;
     int top;
-    public:
+
+public:
     stack()
     {
-        arr=new int[n];
-        top=-1;
+        arr = new int[n];
+        top = -1;
     }
     void push(int x)
     {
-        if(top==n-1)
+        if (top == n - 1)
         {
-            cout<<"stack overflow"<<endl;
+            cout << "stack overflow" << endl;
             return;
         }
         top++;
-        arr[top]=x;
-
+        arr[top] = x;
     }
     void pop()
     {
-        if(top==-1)
+        if (top == -1)
         {
-            cout<<"no element to pop";
+            cout << "no element to pop";
         }
         top--;
     }
-    int Top()//
+    int Top() //
     {
-        if(top==-1)
+        if (top == -1)
         {
-            cout<<"no element in stack";
+            cout << "no element in stack";
             return -1;
         }
-        
+
         return arr[top];
     }
- bool empty()
- {
-     return top==-1;
- }
-
+    bool empty()
+    {
+        return top == -1;
+    }
 };
 int main()
 {
@@ -61,13 +61,14 @@ int main()
     st.push(1);
     st.push(2);
     st.push(3);
-    cout<<st.Top()<<endl;
+    cout << st.Top() << endl;
     st.pop();
-    cout<<st.Top()<<endl;
+    cout << st.Top() << endl;
     st.pop();
     st.pop();
     st.pop();
-    cout<<endl<<st.empty()<<endl;
+    cout << endl
+         << st.empty() << endl;
 
-return 0;
+    return 0;
 }
