@@ -1,9 +1,0 @@
-# depslib dependency file v1.0
-1514140582 source:c:\users\abhay\desktop\aju_coding cp\codeblock\library\main.c
-
-1634218182 source:c:\users\abhay\desktop\aju_coding cp\codeblock\library\library.cpp
-	<iostream>
-	"library.h"
-
-1634218165 c:\users\abhay\desktop\aju_coding cp\codeblock\library\library.h
-

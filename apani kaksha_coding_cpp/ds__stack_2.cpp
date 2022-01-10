@@ -11,7 +11,7 @@ void reversesentense(string s)
        string word="";
        while(s[i]!=' '&& i<s.length())
        {
-           word+=s[i];
+         word+=s[i];
            i++;
        }
        st.push(word);
