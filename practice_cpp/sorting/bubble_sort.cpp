@@ -30,8 +30,10 @@ int main()
                 arr[i] = arr[i + 1];
                 arr[i + 1] = temp;
             }
+            cout << arr[i];
         }
         counter++;
+        cout << endl;
     }
     cout << "\nTHE SORTED ELEMESTS UING BUBBLE SORT AS  FOLLOWS: =\n";
     for (int i = 0; i < n; i++)

@@ -40,3 +40,13 @@ int main()
     cout << binarysearch(arr, n, key);
 }
 //time complexity = O(log n)
+
+/*
+Output:=
+enter the size of array :=5
+ENTER THE n ELEMENTS OF ARRAY12 21 32 42 16
+ENTER THE VALUE OF KEY
+32
+2
+
+*/

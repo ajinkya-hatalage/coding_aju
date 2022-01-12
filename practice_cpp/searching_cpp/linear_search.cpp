@@ -17,7 +17,7 @@ int main()
     cout << "ENTER THE SIZE OF ARRAY :=";
     cin >> n;
     int arr[n];
-    cout << "ENTER THE n  ELEMENTS IN ARRAY :=";
+    cout << "ENTER THE n  ELEMENTS IN ARRAY\n :=";
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
@@ -29,3 +29,14 @@ int main()
 }
 
 // time complexity : =O(n)
+
+/*
+output:=
+
+ENTER THE SIZE OF ARRAY :=6
+ENTER THE n  ELEMENTS IN ARRAY
+ :=34 23 55 653 23 35
+ENTER THE KEY TO BE SEARCH :=653
+3
+
+*/
