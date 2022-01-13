@@ -36,11 +36,11 @@ node *deleteafter(node *&head, int pos)
 {
     node *temp = head;
     node *prev_node ;
-    for (int i = 1; i < pos; i++)
+    for (int i = 0; i < pos; i++)
     {
+        prev_node = temp;
         temp = temp->next;
     }
-    prev_node->next = temp;
     prev_node->next = temp->next;
     delete (temp);
     return head;
@@ -88,7 +88,7 @@ int main()
     cout << "\nDELETE AT END :=\n";
     deleteatend(head);
     display(head);
-    cout << "\nDELETE AT MIDDLE :=\n";
+    cout << "\nDELETE ATFTER AT given index :=\n";
     deleteafter(head,2);
     display(head);
 }
