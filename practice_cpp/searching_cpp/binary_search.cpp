@@ -3,6 +3,7 @@
 using namespace std;
 int binarysearch(int arr[], int n, int key)
 {
+    
     int s = 0; //starting point
     int e = n; //ending point
     while (s <= e)
@@ -44,7 +45,7 @@ int main()
 /*
 Output:=
 enter the size of array :=5
-ENTER THE n ELEMENTS OF ARRAY12 21 32 42 16
+ENTER THE n ELEMENTS OF ARRAY 12 21 32 42 16
 ENTER THE VALUE OF KEY
 32
 2
