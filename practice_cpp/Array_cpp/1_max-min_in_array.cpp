@@ -1,47 +1,45 @@
 #include<iostream>
+#include<climits>
+
 using namespace std;
 
-int getmax(int num[],int n)
+void getmaxNo(int arr[],int n)
 {
-    int maxi = INT16_MIN; //
+    int maxi = INT_MIN;
     for (int i = 0; i < n;i++)
     {
-        maxi = max(maxi, num[i]);
-        /* if(num[i]>max)
+        if(arr[i]>maxi)
         {
-            max = num[i];
+            maxi = arr[i];
         }
-        */
     }
-    return maxi;
+    cout << maxi<<endl;
 }
-int getmin(int num[],int n)
-{
-    int mini = INT16_MAX;
-    for (int i = 0; i < n;i++)
-    {
-        mini = min(mini, num[i]);//inbilt fun
-        /*
-        if(num[i]<min)
-        {
-            min = num[i];
-        }
-        */
-    }
 
-    return mini;
+void getminNo(int arr[],int n)
+{
+    int mini = INT_MAX;
+    for (int i = 0; i < n;i++)
+    {
+        if(arr[i]<mini)
+        {
+            mini = arr[i];
+        }
+    }
+    cout << mini<<endl;
 }
+
+
 int main()
 {
-    int size;
-    cin >> size;
-    int num[100];
-    for (int i = 0; i < size;i++)
+    int n;
+    cin >> n;
+    int arr[n];
+    for (int i = 0; i < n;i++)
     {
-        cin >> num[i];
+        cin >> arr[i];
     }
-    
-    cout << "maximum value is" << getmax(num, size) << endl;
-    cout << "minimum value is" << getmin(num, size) << endl;
-    return 0;
+
+    getmaxNo(arr, n);
+    getminNo(arr, n);
 }
